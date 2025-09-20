@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Introduction">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="21"/>
+    <property name="source" value="21"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-java/4.35.0/selenium-java-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-api/4.35.0/selenium-api-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.35.0/selenium-chrome-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.35.0/selenium-chromium-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-json/4.35.0/selenium-json-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-manager/4.35.0/selenium-manager-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.35.0/selenium-devtools-v137-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.35.0/selenium-devtools-v138-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-devtools-v139/4.35.0/selenium-devtools-v139-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.35.0/selenium-edge-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.35.0/selenium-firefox-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-http/4.35.0/selenium-http-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.35.0/selenium-ie-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.35.0/selenium-remote-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar"/>
+        <pathelement location="../../.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar"/>
+        <pathelement location="../../.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+        <pathelement location="../../.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar"/>
+        <pathelement location="../../.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-api/1.53.0/opentelemetry-api-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-context/1.53.0/opentelemetry-context-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-common/1.53.0/opentelemetry-common-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.53.0/opentelemetry-exporter-logging-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.53.0/opentelemetry-sdk-common-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.53.0/opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.53.0/opentelemetry-sdk-extension-autoconfigure-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.53.0/opentelemetry-sdk-trace-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk/1.53.0/opentelemetry-sdk-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.53.0/opentelemetry-sdk-metrics-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.53.0/opentelemetry-sdk-logs-1.53.0.jar"/>
+        <pathelement location="../../.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-os/4.35.0/selenium-os-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.35.0/selenium-safari-driver-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/seleniumhq/selenium/selenium-support/4.35.0/selenium-support-4.35.0.jar"/>
+        <pathelement location="../../.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar"/>
+        <pathelement location="../../.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar"/>
+        <pathelement location="../../.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar"/>
+        <pathelement location="../../.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar"/>
+    </path>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="../../.p2/pool/plugins/org.testng_7.11.0.r202503091654.jar"/>
+        <pathelement location="../../.p2/pool/plugins/com.beust.jcommander_1.83.0.jar"/>
+        <pathelement location="../../.p2/pool/plugins/slf4j.api_2.0.17.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.yaml.snakeyaml_2.2.0.jar"/>
+        <pathelement location="../../.p2/pool/plugins/org.webjars.jquery_3.7.1.jar"/>
+    </path>
+    <path id="Introduction.classpath">
+        <pathelement location="target/classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <path refid="TestNG.libraryclasspath"/>
+    </path>
+    <path id="run.CoreJavaBrushup.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CoreJavaBrushup2.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CoreJavaBrushup3.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Dynamicdropdown.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Locators.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Locators2.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Locators3.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.SelIntroduction.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.staticDropdown.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.UpdatedDropdown.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.WindowsActivities.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Autosuggestivedropdown.classpath">
+        <path refid="Introduction.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <include name="**/*.java"/>
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <classpath refid="Introduction.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CoreJavaBrushup">
+        <java classname="seleniumIntro.CoreJavaBrushup" failonerror="true" fork="yes">
+            <classpath refid="run.CoreJavaBrushup.classpath"/>
+        </java>
+    </target>
+    <target name="CoreJavaBrushup2">
+        <java classname="seleniumIntro.CoreJavaBrushup2" failonerror="true" fork="yes">
+            <classpath refid="run.CoreJavaBrushup2.classpath"/>
+        </java>
+    </target>
+    <target name="CoreJavaBrushup3">
+        <java classname="seleniumIntro.CoreJavaBrushup3" failonerror="true" fork="yes">
+            <classpath refid="run.CoreJavaBrushup3.classpath"/>
+        </java>
+    </target>
+    <target name="Dynamicdropdown">
+        <java classname="seleniumIntro.Dynamicdropdown" failonerror="true" fork="yes">
+            <classpath refid="run.Dynamicdropdown.classpath"/>
+        </java>
+    </target>
+    <target name="Locators">
+        <java classname="seleniumIntro.Locators" failonerror="true" fork="yes">
+            <classpath refid="run.Locators.classpath"/>
+        </java>
+    </target>
+    <target name="Locators2">
+        <java classname="seleniumIntro.Locators2" failonerror="true" fork="yes">
+            <classpath refid="run.Locators2.classpath"/>
+        </java>
+    </target>
+    <target name="Locators3">
+        <java classname="seleniumIntro.Locators3" failonerror="true" fork="yes">
+            <classpath refid="run.Locators3.classpath"/>
+        </java>
+    </target>
+    <target name="SelIntroduction">
+        <java classname="seleniumIntro.SelIntroduction" failonerror="true" fork="yes">
+            <classpath refid="run.SelIntroduction.classpath"/>
+        </java>
+    </target>
+    <target name="staticDropdown">
+        <java classname="seleniumIntro.staticDropdown" failonerror="true" fork="yes">
+            <classpath refid="run.staticDropdown.classpath"/>
+        </java>
+    </target>
+    <target name="UpdatedDropdown">
+        <java classname="seleniumIntro.UpdatedDropdown" failonerror="true" fork="yes">
+            <classpath refid="run.UpdatedDropdown.classpath"/>
+        </java>
+    </target>
+    <target name="WindowsActivities">
+        <java classname="seleniumIntro.WindowsActivities" failonerror="true" fork="yes">
+            <classpath refid="run.WindowsActivities.classpath"/>
+        </java>
+    </target>
+    <target name="Autosuggestivedropdown">
+        <java classname="seleniumIntro.Autosuggestivedropdown" failonerror="true" fork="yes">
+            <classpath refid="run.Autosuggestivedropdown.classpath"/>
+        </java>
+    </target>
+</project>
