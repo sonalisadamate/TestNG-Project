@@ -27,11 +27,6 @@ public class CoreJavaBrushup2 {
 			a.get(4);
 			System.out.println(a.get(3));
 		}
-			for (int i=0; i<a.size();i++)
-			{
-				
-			}
-	
-
+			
 }
 }

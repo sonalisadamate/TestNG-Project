@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Locators3 {
 
@@ -17,7 +18,7 @@ public class Locators3 {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		System.out.println(driver.findElement(By.xpath("//header/div/button/[1]/following-sibling::button[1]")).getText());
 		System.out.println(driver.findElement(By.xpath("//header/div/button/[1]/following-sibling::button[1]")).getText());
-
+     
 	}
 
 }

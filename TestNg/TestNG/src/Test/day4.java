@@ -22,5 +22,6 @@ public void LoginAPIHomeLoan()
 {
 	//Rest API Automation
 	System.out.println("LoginAPIHome");
+	
 }
 }
